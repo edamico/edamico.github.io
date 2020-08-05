@@ -25,7 +25,7 @@
 <script>
 
 // define online and offline audio context
-
+window.AudioContext = window.AudioContext || window.webkitAudioContext;
 let audioCtx = new AudioContext();
 let offlineCtx = new OfflineAudioContext(2,44100*40,44100);
 
